@@ -1,0 +1,47 @@
+ @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Love+Light&display=swap');
+
+
+//font
+$harryPotterfont: "Edu VIC WA NT Beginner", cursive;
+//spacing
+
+$indent__base: 15px; 
+$indent__s: $indent__base * 2; 
+$indent__m: $indent__base * 1.5;
+$indent__l: $indent__base * 2; //32px
+$indent__xl: $indent__base * 3; //48px
+$indent__xxl: $indent__base * 4; //64px
+$indent__xxxl: $indent__base * 6; //80px
+
+//colors
+$color-gryffindor: #740001;
+$color-gryffindor-red: #ae0001;
+$color-gryffindor-yellow: #eeba30;
+$color-gryffindor-gold: #d3a625;
+
+$color-ravenclaw: #0E1A40;
+$color-ravenclaw-blue: #222F5B;
+$color-TheGreyLady: #bebebe;
+$color-ravenclaw-gold: #946B2D;
+
+$color-slytherin-darkgreen: #1A472A;
+$color-slytherin-green: #2a623d;
+$color-slytherin-darksilver: #5d5d5d;
+$color-slytherin-lightsilver: #aaaaaa;
+
+$color-hufflepuff: #FFD800;
+$color-huffelpuff-canary: #ecb939;
+$color-huffelpuff-lightbrown: #726255;
+$color-huffelpuff-darkbrown: #372e29;
+$color-huffelpuff-black: #000000;
+
+//utility colors
+$primary__text: $color-ravenclaw;
+
+$primary__background:$color-TheGreyLady;
+$primary__background-light: #f5f5f5;
+
+//Screen size
+$bp-mobile: 375px;
+$bp-tablet: 768px;
+$bp-desktop: 991px;
