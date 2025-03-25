@@ -10,11 +10,6 @@ export default function HousePage() {
   const params = useParams();
   const houseName = params.house as string;
 
-  const validHouses = ["gryffindor", "slytherin", "hufflepuff", "ravenclaw"];
-  if (!validHouses.includes(houseName)) {
-    return <p>Chose a house.</p>;
-  }
-
   const [characters, setCharacters] = useState<StudentsType[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -37,6 +32,11 @@ export default function HousePage() {
 
     fetchCharacters();
   }, [houseName]);
+
+  const validHouses = ["gryffindor", "slytherin", "hufflepuff", "ravenclaw"];
+  if (!validHouses.includes(houseName)) {
+    return <p>Chose a house.</p>;
+  }
 
   if (loading) return <p>Loading...</p>;
 
